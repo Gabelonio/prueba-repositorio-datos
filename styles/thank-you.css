@@ -1,0 +1,56 @@
+.main-container {
+  height: 325px;
+  padding: 25pt;
+}
+.illustration-thank-you {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+}
+.feedback-text {
+  margin: auto;
+  margin-top: 30px;
+  padding: 10px;
+  width: 50%;
+  border-radius: 20pt;
+  background-color: var(--DarkBlue);
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  color: var(--Orange);
+  text-align: center;
+}
+.title-thank-you {
+  text-align: center;
+  color: var(--White);
+  font-size: 25px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 500;
+}
+.text-thank-you {
+  text-align: center;
+  color: var(--MediumGrey);
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 500;
+}
+
+@media (max-width: 417px) {
+  .main-container {
+    height: 315px;
+    padding: 10pt;
+  }
+  .feedback-text {
+    font-size: 12px;
+  }
+  .title-thank-you {
+    font-size: 20px;
+  }
+  .text-thank-you {
+    font-size: 12px;
+    font-family: "Overpass", sans-serif;
+    font-weight: 500;
+  }
+}

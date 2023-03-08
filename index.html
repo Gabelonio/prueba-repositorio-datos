@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <script src="./feedback.js"></script>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <div class="main-container">
+      <div class="rating-star">
+        <div class="star-icon"></div>
+        <img src="./images/icon-star.svg" alt="My Happy SVG" />
+      </div>
+      <div class="feedback-title">How did we do?</div>
+      <div class="support-text">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </div>
+      <form action="thank-you.html" method="POST">
+        <div class="rating">
+          <div class = "level" id="One" onclick="setRating(1, 'One', this)">1</div>
+          <div class = "level" id="Two" onclick="setRating(2, 'Two', this)">2</div>
+          <div class = "level" id="Three" onclick="setRating(3, 'Three', this)">3</div>
+          <div class = "level" id="Four" onclick="setRating(4, 'Four', this)">4</div>
+          <div class = "level" id="Five" onclick="setRating(5, 'Five', this)">5</div>
+        </div>
+        <div class="submit">
+          <button id="submitFeedback" type="button" onclick="hrefFunction()">
+            SUBMIT
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
